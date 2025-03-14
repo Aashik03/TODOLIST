@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:pink;
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/BerkshireSwash-Regular.ttf') format('truetype'); 
+}
+
+body {
+    font-family: 'CustomFont', sans-serif;
+    color:rgb(70, 6, 103) ;
+}
+
+.topic{
+    font-weight: bolder;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px; /* Set width */
+    height:100%; /* Set height */
+    background-image: url('/78343d1aebf709234c1d04bc3f75295f.jpg'); /* Set background image */
+    background-size: cover; /* Make sure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    padding: 20px; /* Add padding for spacing */
+    position: relative; /* Ensure elements inside position correctly */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:rgb(95, 32, 153);
+    color: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    font-family: 'CustomFont', sans-serif;
+}
+button:hover{
+    background-color:white;
+    color:rgb(95, 32, 153);
+}
+
+#taskContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers tasks horizontally */
+    width: 100%;
+    max-width: 400px; /* Prevents it from getting too wide */
+    height: 300px; /* Set a fixed height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes elements apart */
+    width: 60%; /* Adjust width as needed */
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.task-input {
+    flex-grow: 1; /* Takes available space */
+    padding: 5px;
+    border: none;
+    background: transparent;
+    text-align: center;
+}
+
+.task-label {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.delete-btn {
+    background: rgb(95, 32, 153);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto; /* Pushes button to the right */
+}
+
+#bgMusic{
+    display: none;
+}
